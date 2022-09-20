@@ -33,7 +33,7 @@ class WondersApp extends StatelessWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       routerDelegate: appRouter.routerDelegate,
-      routeInformationProvider: appRouter.routeInformationProvider,
+      // routeInformationProvider: appRouter.,
       routeInformationParser: appRouter.routeInformationParser,
       theme: ThemeData(fontFamily: $styles.text.body.fontFamily),
       localizationsDelegates: const [

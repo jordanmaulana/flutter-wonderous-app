@@ -92,11 +92,6 @@ class RetryImage extends ImageProvider<Object> {
   }
 
   @override
-  ImageStreamCompleter loadBuffer(Object key, DecoderBufferCallback decode) {
-    return _commonLoad(() => imageProvider.loadBuffer(key, decode));
-  }
-
-  @override
   bool operator ==(Object other) {
     if (other.runtimeType != runtimeType) {
       return false;

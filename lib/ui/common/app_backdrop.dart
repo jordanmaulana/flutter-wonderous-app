@@ -1,6 +1,5 @@
 import 'dart:ui';
 
-import 'package:flutter/foundation.dart';
 import 'package:wonders/common_libs.dart';
 
 class AppBackdrop extends StatelessWidget {
@@ -31,5 +30,15 @@ class AppBackdrop extends StatelessWidget {
               Positioned.fill(child: fill),
             ],
           );
+  }
+
+  static double clampDouble(double min, double max, double input) {
+    if (input < min) {
+      return min;
+    } else if (input > max) {
+      return max;
+    }
+
+    return input;
   }
 }
